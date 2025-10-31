@@ -22,8 +22,22 @@ class SplashScreen1 extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              
             ),
+            Text(
+              "Welcome",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: const Color.fromARGB(255, 0, 0, 0),
+              ),
+            ),
+            Text(
+              "Forgot to bring your wallet while shopping ?",
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.green,
+              ),
+            )
           ],
         ),
       ),
