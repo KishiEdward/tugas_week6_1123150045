@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flut_week6/screen/splash_screen2.dart';
 
 class SplashScreen1 extends StatelessWidget {
   const SplashScreen1({super.key});
@@ -23,6 +24,7 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ),
             ),
+
             Text(
               "Welcome",
               style: TextStyle(
@@ -31,12 +33,16 @@ class SplashScreen1 extends StatelessWidget {
                 color: const Color.fromARGB(255, 0, 0, 0),
               ),
             ),
+
             SizedBox(height: 10),
+
             Text(
               "Forgot to bring your wallet while shopping ?",
               style: TextStyle(fontSize: 16, color: Colors.green),
             ),
+
             SizedBox(height: 20),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,7 +55,9 @@ class SplashScreen1 extends StatelessWidget {
                     color: Color(0xFF84a98c),
                   ),
                 ),
+
                 SizedBox(width: 5),
+
                 Container(
                   width: 10,
                   height: 10,
@@ -58,7 +66,9 @@ class SplashScreen1 extends StatelessWidget {
                     color: Color(0xFFedede9),
                   ),
                 ),
+
                 SizedBox(width: 5),
+
                 Container(
                   width: 10,
                   height: 10,
@@ -69,7 +79,9 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ],
             ),
+
             SizedBox(height: 20),
+
             Container(
               margin: EdgeInsets.symmetric(horizontal: 50),
               child: SizedBox(
@@ -77,7 +89,10 @@ class SplashScreen1 extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    //todo untuk ke next
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SplashScreen2()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFF4CAF50),
