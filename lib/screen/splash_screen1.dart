@@ -6,18 +6,21 @@ class SplashScreen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(height: 50),
-          Container(
-            width: 250,
-            height: 250,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Color.fromARGB(255, 229, 255, 151),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              width: 250,
+              height: 250,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                color: Color.fromARGB(255, 108, 244, 67),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
