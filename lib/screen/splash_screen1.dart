@@ -31,13 +31,56 @@ class SplashScreen1 extends StatelessWidget {
                 color: const Color.fromARGB(255, 0, 0, 0),
               ),
             ),
+            SizedBox(height: 10),
             Text(
               "Forgot to bring your wallet while shopping ?",
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.green,
+              style: TextStyle(fontSize: 16, color: Colors.green),
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFF84a98c),
+                  ),
+                ),
+                SizedBox(width: 5),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9),
+                  ),
+                ),
+                SizedBox(width: 5),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Container(
+              child: ElevatedButton(
+                onPressed: () {
+                  //todo untuk ke next
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFF4CAF50),
+                ),
+                child: Text("continue", style: TextStyle(fontSize: 14, color: Colors.white)),
               ),
-            )
+            ),
           ],
         ),
       ),
