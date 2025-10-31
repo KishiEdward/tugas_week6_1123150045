@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class SplashScreen1 extends StatelessWidget {
+  const SplashScreen1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
               shape: BoxShape.circle,
               color: Color.fromARGB(255, 229, 255, 151),
             ),
-          )
+          ),
         ],
       ),
     );

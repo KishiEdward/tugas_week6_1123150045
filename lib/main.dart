@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'screen/splash_screen1.dart';
 
-void main(){
+void main() {
   print('Hello, World!');
 }
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
       ),
-      home: const Splashscreen1(),
+      home: const SplashScreen1(),
     );
   }
 }
