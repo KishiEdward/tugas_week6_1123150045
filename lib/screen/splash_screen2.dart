@@ -19,13 +19,13 @@ class SplashScreen2 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Color.fromARGB(255, 108, 244, 67),
                 image: DecorationImage(
-                  image: AssetImage('assets/images/splash3.png'),
+                  image: AssetImage('assets/images/splash2.png'),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
             Text(
-              "Welcome",
+              "Selamat datang",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -47,7 +47,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFF84a98c),
+                    color: Color(0xFFedede9),
                   ),
                 ),
                 SizedBox(width: 5),
@@ -56,7 +56,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFedede9),
+                    color: Color(0xFF84a98c),
                   ),
                 ),
                 SizedBox(width: 5),

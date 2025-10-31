@@ -18,13 +18,13 @@ class SplashScreen3 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Color.fromARGB(255, 108, 244, 67),
                 image: DecorationImage(
-                  image: AssetImage('assets/images/splash3.png'),
+                  image: AssetImage('assets/images/splash1.png'),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
             Text(
-              "Welcome",
+              "Di aplikasi saya",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -46,25 +46,25 @@ class SplashScreen3 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
+                    color: Color(0xFFedede9),
+                  ),
+                ),
+                SizedBox(width: 5),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9),
+                  ),
+                ),
+                SizedBox(width: 5),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
                     color: Color(0xFF84a98c),
-                  ),
-                ),
-                SizedBox(width: 5),
-                Container(
-                  width: 10,
-                  height: 10,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFFedede9),
-                  ),
-                ),
-                SizedBox(width: 5),
-                Container(
-                  width: 10,
-                  height: 10,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFFedede9),
                   ),
                 ),
               ],
@@ -77,7 +77,7 @@ class SplashScreen3 extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    //todo untuk ke next
+                    //todo untuk ke login
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFF4CAF50),
