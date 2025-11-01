@@ -9,7 +9,7 @@ class Login extends StatelessWidget {
       body: Center(
         child: Container(
           padding: const EdgeInsets.all(20.0),
-          child: const Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -24,6 +24,7 @@ class Login extends StatelessWidget {
                 'Please click login to continue',
                 style: TextStyle(fontSize: 16),
               ),
+              SizedBox(height: 20),
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -41,6 +42,53 @@ class Login extends StatelessWidget {
                     borderSide: BorderSide(color: Colors.blue, width: 2.0),
                     borderRadius: BorderRadius.all(Radius.circular(12.0)),
                   ),
+                ),
+              ),
+              SizedBox(height: 20),
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                  hintText: 'Enter your password',
+                  prefixIcon: Icon(Icons.lock_outline),
+                  suffixIcon: Icon(Icons.visibility_outlined),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                    borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                    borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Text(
+                  'Forgot Password?',
+                  style: TextStyle(color: Colors.blue),
+                ),
+              ),
+              SizedBox(height: 30),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white,
+                  padding: EdgeInsets.symmetric(vertical: 15.0),
+                  minimumSize: Size(double.infinity, 50),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                  ),
+                  elevation: 5,
+                ),
+                child: Text(
+                  'Login',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
             ],
